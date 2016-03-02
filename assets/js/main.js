@@ -8,6 +8,16 @@ function setInput(button) {
 	button.style.display = 'none';
 }
 
+// var $ = require('jquery');
+// var slick = require('slick-carousel');
+//
+	$(document).ready(function() {
+		$('.photo-carousel').slick({
+			dots: true,
+			speed: 500
+		});
+	});
+
 (function($) {
 
 	skel.breakpoints({

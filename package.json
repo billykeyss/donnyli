@@ -6,6 +6,7 @@
   "dependencies": {
     "bootstrap": "^3.3.6",
     "gulp": "^3.9.0",
+    "slick-carousel": "^1.5.9",
     "wiredep": "^2.2.2"
   },
   "devDependencies": {
