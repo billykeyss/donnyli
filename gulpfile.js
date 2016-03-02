@@ -39,8 +39,7 @@ gulp.task('compress', function () {
     gulp.src('assets/js/ie/*.js')
         .pipe(uglify())
         .pipe(gulp.dest('dist/assets/js/ie'));
-    gulp.src('assets/js/slick/*.js')
-        .pipe(uglify())
+    gulp.src('assets/js/slick/*')
         .pipe(gulp.dest('dist/assets/js/slick'));
 });
 
