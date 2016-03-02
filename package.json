@@ -4,6 +4,7 @@
   "description": "Free for personal and commercial use under the CCA 3.0 license.",
   "main": "index.js",
   "dependencies": {
+    "bootstrap": "^3.3.6",
     "gulp": "^3.9.0",
     "wiredep": "^2.2.2"
   },

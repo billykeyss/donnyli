@@ -1789,6 +1789,10 @@
 			padding: 0 3em;
 		}
 
+		.pagination-button {
+			padding-top:20px !important;
+		}
+
 		input[type="submit"].small,
 		input[type="reset"].small,
 		input[type="button"].small,
@@ -2956,9 +2960,9 @@
 		justify-content: space-between;
 		background-color: #ffffff;
 		border-bottom: solid 1px rgba(160, 160, 160, 0.3);
-		height: 3.5em;
+		height: 3.0em;
 		left: 0;
-		line-height: 3.5em;
+		line-height: 3.0em;
 		position: fixed;
 		top: 0;
 		width: 100%;
@@ -3420,6 +3424,10 @@
 			-ms-transform: translateX(0);
 			transform: translateX(0);
 			visibility: visible;
+		}
+
+		.profile-picture {
+			border-radius:50%;
 		}
 
 		@media screen and (max-width: 736px) {
