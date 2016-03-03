@@ -34,6 +34,53 @@
 		content: none;
 	}
 
+	.ribbon {
+	 font-size: 16px !important;
+	 /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+
+	 position: relative;
+	 background: #EB374B;
+	 color: #fff;
+	 text-align: center;
+	 padding: 1em; /* Adjust to suit */
+	 padding-bottom: 1em !important; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+	 bottom: 5
+	}
+	.ribbon:before, .ribbon:after {
+	 content: "";
+	 position: absolute;
+	 display: block;
+	 bottom: -1em;
+	 border: 1.5em solid #BC2C3C;
+	 z-index: -1;
+	}
+	.ribbon:before {
+	 left: -2em;
+	 border-right-width: 1.5em;
+	 border-left-color: transparent;
+	}
+	.ribbon:after {
+	 right: -2em;
+	 border-left-width: 1.5em;
+	 border-right-color: transparent;
+	}
+	.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+	 content: "";
+	 position: absolute;
+	 display: block;
+	 border-style: solid;
+	 border-color: #BC2C3C transparent transparent transparent;
+	 bottom: -1em;
+	}
+	.ribbon .ribbon-content:before {
+	 left: 0;
+	 border-width: 1em 0 0 1em;
+	}
+	.ribbon .ribbon-content:after {
+	 right: 0;
+	 border-width: 1em 1em 0 0;
+	}
+
 	table {
 		border-collapse: collapse;
 		border-spacing: 0;
@@ -2595,7 +2642,7 @@
 				-ms-flex-grow: 1;
 				flex-grow: 1;
 				-ms-flex: 1;
-				padding: 3.75em 3em 3.3em 3em;
+				padding: 3em;
 			}
 
 				.post > header .title h2 {
@@ -2705,7 +2752,7 @@
 							margin-right: 0.75em;
 						}
 
-		@media screen and (max-width: 980px) {
+		@media screen and (max-width: 950px) {
 
 			.post {
 				border-left: 0;

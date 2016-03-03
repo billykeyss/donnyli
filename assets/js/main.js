@@ -11,12 +11,12 @@ function setInput(button) {
 // var $ = require('jquery');
 // var slick = require('slick-carousel');
 //
-	$(document).ready(function() {
-		$('.photo-carousel').slick({
-			dots: true,
-			speed: 500
-		});
-	});
+// 	$(document).ready(function() {
+// 		$('.photo-carousel').slick({
+// 			dots: true,
+// 			speed: 500
+// 		});
+// 	});
 
 (function($) {
 

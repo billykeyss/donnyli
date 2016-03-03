@@ -39,8 +39,6 @@ gulp.task('compress', function () {
     gulp.src('assets/js/ie/*.js')
         .pipe(uglify())
         .pipe(gulp.dest('dist/assets/js/ie'));
-    gulp.src('assets/js/slick/*')
-        .pipe(gulp.dest('dist/assets/js/slick'));
 });
 
 gulp.task('imageMin', function () {
@@ -64,4 +62,4 @@ gulp.task('run', function () {
     });
 });
 
-gulp.task('build', ['html', 'css', 'copy', 'compress', 'imageMin']);
+gulp.task('build', ['html', 'css', 'copy', 'compress', 'imageMin', 'deploy']);
