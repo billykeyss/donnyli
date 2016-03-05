@@ -62,4 +62,4 @@ gulp.task('run', function () {
     });
 });
 
-gulp.task('build', ['html', 'css', 'copy', 'compress', 'imageMin', 'deploy']);
+gulp.task('build', ['html', 'css', 'copy', 'compress', 'imageMin']);
