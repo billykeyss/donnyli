@@ -1,4 +1,4 @@
-// dependencies
+//dependencies
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create(); // run a local version with livereload (it will automatiucally reload the page when you change something on your code)
 var ghPages = require('gulp-gh-pages');
@@ -11,7 +11,7 @@ var image = require('gulp-image');
 
 // task to minify your html
 gulp.task('html', function () {
-    return gulp.src('index.html')
+    return gulp.src('*.html')
         .pipe(htmlmin({
             collapseWhitespace: true
         }))
